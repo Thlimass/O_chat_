@@ -11,6 +11,9 @@ io.on("connection", function (socket) {
         if (!(apelido in usuarios)) {
             socket.apelido = apelido;
             usuarios[apelido] = socket;
+
+            
+
             callback(true);
         } else {
             callback(false);
