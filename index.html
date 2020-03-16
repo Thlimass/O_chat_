@@ -27,6 +27,9 @@
             <input type='submit' value='Enviar mensagem!' />    
         </form>
    </div>
+   <div id="historico_mensagens"></div>
+<select multiple="multiple" id='lista_usuarios'><option value=''>Todos</option></select>
+<form id='chat'>
 
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -45,6 +48,8 @@
             });
 
         });
+
+        
 
         $("form#login").submit(function(e){
      e.preventDefault();
