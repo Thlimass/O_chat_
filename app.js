@@ -12,7 +12,8 @@ io.on("connection", function (socket) {
             socket.apelido = apelido;
             usuarios[apelido] = socket;
 
-            
+            io.sockets.emit("atualizar usuarios", Object.keys(usuarios));
+            io.sockets.emit("atualizar mensagens", "[ " + pegarDataAtual() + " ] " + apelido + " acabou de entrar na sala");
 
             callback(true);
         } else {
