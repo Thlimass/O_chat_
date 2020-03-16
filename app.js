@@ -1,6 +1,8 @@
 //criando servidor http na porta 3000
 var app = require('http').createServer(resposta);
 var fs = require('fs');
+//incluindo na aplicação o Socket.IO
+var io = require('socket.io')(app);
 
   
 app.listen(3000);
