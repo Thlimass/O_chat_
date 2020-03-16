@@ -27,7 +27,7 @@ form input[type='submit']{
     padding:7px 5px;
     width:19%;
 }
-#historico_mensagens, #lista_usuarios{
+#historico_mensagens{
     background: #FFF;
      border:2px solid #45C5BF;
      height: 550px;
@@ -35,13 +35,7 @@ form input[type='submit']{
      margin-bottom: 10px;
      width:75%;
 }
-#historico_mensagens{
-    border-right: 0;
-}
-#lista_usuarios{
-border-left: 1px solid #45C5BF;
-    height: 554px;
-    width: 20%;
+
 
 #sala_chat{
     display: none;
@@ -57,4 +51,13 @@ border-left: 1px solid #45C5BF;
 }
 #acesso_usuario form{
     margin:0;
+}
+
+#historico_mensagens{
+    border-right: 0;
+}
+#lista_usuarios{
+border-left: 1px solid #45C5BF;
+    height: 554px;
+    width: 20%;
 }
