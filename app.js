@@ -3,7 +3,7 @@ var app = require('http').createServer(resposta);
 var fs = require('fs');
 //incluindo na aplicação o Socket.IO
 var io = require('socket.io')(app);
-var usuario = [];
+var usuarios = [];
 
 //resposta a conexao do cliente ao servidor.
 io.on("connection", function (socket) {
