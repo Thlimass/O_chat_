@@ -46,6 +46,20 @@
 
         });
 
+        $("form#login").submit(function(e){
+     e.preventDefault();
+  
+     socket.emit("entrar", $(this).find("#apelido").val(), function(valido){
+         if(valido){
+              $("#acesso_usuario").hide();
+              $("#sala_chat").show();
+         }else{
+              $("#acesso_usuario").val("");
+              alert("Nome já utilizado nesta sala");
+         }
+     });
+});
+
     </script>
 </body>
 
